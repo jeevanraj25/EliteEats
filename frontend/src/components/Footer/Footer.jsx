@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
            <img src={assets.logo} alt="" />
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam ex, voluptate quod, possimus ipsa sunt tempora distinctio pariatur quis reprehenderit vero at minus unde animi inventore cumque, officiis ipsum.</p>
+           <p>Your ultimate destination for delicious food delivered to your doorstep. Discover a world of flavors, delivered with care to your doorstep.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="footer-copy-right">CopyRight 2024 @Tomato.com  All Right Reservied</p>
+      <p className="footer-copy-right">CopyRight 2024 @Biteful.com  All Right Reservied</p>
     </div>
   );
 };
