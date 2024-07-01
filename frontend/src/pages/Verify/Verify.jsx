@@ -23,6 +23,7 @@ const Verify = () => {
             }
         }catch(error){
             console.log(error);
+            alert("error")
         }
         
     }
