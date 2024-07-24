@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const List = () => {
   
-  const url = "http://localhost:3000";
+  const url = "https://food-del-backend-ib98.onrender.com";
   const [list,setList] = useState([]);
 
   const fetechList =async () =>{
