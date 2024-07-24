@@ -83,6 +83,10 @@ export const assets = {
 }
 
 export const menu_list = [
+   {
+      menu_name :"All",
+      menu_image:menu_8
+   },
     {
         menu_name: "Salad",
         menu_image: menu_1
@@ -104,7 +108,7 @@ export const menu_list = [
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "PureVeg",
         menu_image: menu_6
     },
     {

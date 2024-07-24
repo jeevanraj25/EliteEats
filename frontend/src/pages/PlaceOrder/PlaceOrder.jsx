@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState} from "react";
 import "./PlaceOrder.css";
 import { StoreContext } from "../../context/StoreContext";
-import { useNavigate, useNavigation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const PlaceOrder = () => {
@@ -44,7 +44,7 @@ const PlaceOrder = () => {
     let orderData = {
       address: data,
       items: orderItems,
-      amount: getTotalCartAmount() + 3,
+      amount: getTotalCartAmount() + 50,
     };
     try {
       let response = await axios.post(url + "/api/order/place", orderData, {

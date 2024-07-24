@@ -29,7 +29,7 @@ const NavBar = ({setShowLogin}) => {
         if (searchQuery.trim() !== "") {
           navigate("/search", { state: { query: searchQuery } });
         }
-        console.log(searchQuery);
+        // console.log(searchQuery);
         // navigate("/search");
     }
 
