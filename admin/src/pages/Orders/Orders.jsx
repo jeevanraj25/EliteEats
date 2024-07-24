@@ -7,7 +7,7 @@ import './Orders.css'
 
 const Orders = () => {
 
-  const url = "http://localhost:3000";
+  const url = "https://food-del-backend-ib98.onrender.com;
   const [orders,setOrders] =useState([]);
 
    const fetchallOrders = async () =>{
