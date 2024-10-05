@@ -26,7 +26,7 @@ const stripe = new Stripe(apiKey);
 // placing an order for fronted
 const placeOrder = async (req,res) =>{
 
-    const fronted_url ="http://localhost:5173";
+    const fronted_url = process.env.FRONTEND_URL;
    
 
     try {
