@@ -8,7 +8,7 @@ dotenv.config();
 // console.log(process.env);
 const apiKey = process.env.STRIPE_API_KEY;
 
-// console.log('Stripe API Key:', apiKey ? `${apiKey.slice(0, 8)}...${apiKey.slice(-4)}` : 'No API Key');
+
 
 if (!apiKey) {
     console.error('Stripe API key is missing. Please check your .env file.');
