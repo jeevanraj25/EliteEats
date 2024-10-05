@@ -26,7 +26,7 @@ const stripe = new Stripe(apiKey);
 // placing an order for fronted
 const placeOrder = async (req,res) =>{
 
-    const fronted_url ="https://biteful-food-app.vercel.app";
+    const fronted_url ="http://localhost:5173";
    
 
     try {
@@ -58,7 +58,7 @@ const placeOrder = async (req,res) =>{
                 product_data :{
                     name:"Delivary charges"
                 },
-                unit_amount:3*100*80
+                unit_amount:200
             },
             quantity:1
         })
