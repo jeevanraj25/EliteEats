@@ -17,8 +17,6 @@
 - **React.js**: Frontend library for building the user interface.
 - **Node.js**: JavaScript runtime environment for server-side scripting.
 - **Stripe**: Payment gateway for handling transactions.
-- **Tailwind CSS**: Utility-first CSS framework for styling the app.
-
 ## Getting Started
 
 ### Prerequisites
@@ -40,8 +38,26 @@ Ensure that you have the following installed on your local machine:
 
 2.Install the required dependencies:
 
-  ```bash
-  npm run dev
+bash
+npm install
+Start the frontend application:
 
-3.
- npm run dev
+bash
+Copy code
+npm run dev
+Backend
+Navigate to the backend directory:
+
+bash
+Copy code
+cd backend
+Install the required dependencies:
+
+bash
+Copy code
+npm install
+Start the backend server using Nodemon:
+
+bash
+Copy code
+nodemon server.js
