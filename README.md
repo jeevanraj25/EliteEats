@@ -1,6 +1,6 @@
 # EliteEats
 
-**EliteEats** is an online food delivery web application where users can browse and order food from a variety of restaurants. The project is built using the **MERN** stack (MongoDB, Express.js, React.js, and Node.js) and integrates **Stripe** for payment processing.
+**EliteEats** is an online food delivery web application where users can browse and order food. The project is built using the **MERN** stack (MongoDB, Express.js, React.js, and Node.js) and integrates **Stripe** for payment processing.
 
 ## Features
 
@@ -44,18 +44,18 @@ Ensure that you have the following installed on your local machine:
 3. Start the frontend application:
 
    ```bash
-  npm run dev
+   npm run dev
 
 #### Backend
 1. Navigate to the `backend` directory:
 
        ```bash
-   cd backend
+       cd backend
    
 2. Install the required dependencies:
 
            ```bash
-      npm install
+       npm install
 
 3. Start the backend server using Nodemon:
 
