@@ -12,11 +12,9 @@
     height: auto;
 }
 
-.navbar .logo img {
-    max-width: 100%; /* Ensure logo image fills its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure image behaves like a block element */
-}
+
+
+
 
 .navbar-menu{
 

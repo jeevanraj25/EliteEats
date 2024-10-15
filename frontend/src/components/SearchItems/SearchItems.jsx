@@ -21,8 +21,7 @@ const SearchItems = () => {
        
         <div className="food-display-list">
         { query === "" ? <></> :   
-         (food_list
-            .filter(item => item.name.includes(query))
+         (food_list.filter(item => item.name.toLowerCase().includes(query.toLowerCase()))
             .map((item) => (
               <FoodItem
                 key={item._id}

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-           <img src={assets.logo} alt="" />
+           <h1 className="company-name">EliteEats</h1>
            <p>Your ultimate destination for delicious food delivered to your doorstep. Discover a world of flavors, delivered with care to your doorstep.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="footer-copy-right">CopyRight 2024 @Biteful.com  All Right Reservied</p>
+      <p className="footer-copy-right">CopyRight 2024 @EliteEats.com  All Right Reservied</p>
     </div>
   );
 };

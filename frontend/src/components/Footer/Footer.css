@@ -38,6 +38,11 @@
     max-width: 150px; /* Adjust the maximum width as per your design */
     height: auto; /* Maintain aspect ratio */
   }
+
+  .company-name{
+    color: white;
+   
+  }
   
 
 .footer-social-icons img{

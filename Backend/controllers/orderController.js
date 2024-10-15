@@ -26,9 +26,9 @@ const stripe = new Stripe(apiKey);
 // placing an order for fronted
 const placeOrder = async (req,res) =>{
 
-    const fronted_url = "http://localhost:5173/"
+    const fronted_url = "http://localhost:5173"
     
-
+  
   
 
     try {
@@ -49,7 +49,7 @@ const placeOrder = async (req,res) =>{
                 product_data :{
                     name:item.name
                 },
-                unit_amount:item.price * 200
+                unit_amount:item.price * 100
             },
             quantity:item.quantity
         }))
@@ -60,7 +60,7 @@ const placeOrder = async (req,res) =>{
                 product_data :{
                     name:"Delivary charges"
                 },
-                unit_amount:200 * 100
+                unit_amount:50 * 100
             },
             quantity:1
         })
@@ -74,6 +74,7 @@ const placeOrder = async (req,res) =>{
         })
         
         console.log(session);
+        
         res.json({success:true,session_url:session.url});
 
     } catch (error) {
@@ -104,6 +105,7 @@ const verifyOrder =async (req,res) =>{
 const userOrders = async (req,res) =>{
      try {
         const orders =await orderModel.find({userId:req.body.userId});
+        //  console.log(orders);
         res.json({success:true,data:orders});
      } catch (error) {
         console.log(error);
