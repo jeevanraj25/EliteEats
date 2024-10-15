@@ -36,28 +36,28 @@ Ensure that you have the following installed on your local machine:
    ```bash
    cd frontend
 
-2.Install the required dependencies:
+2. Install the required dependencies:
 
-bash
-npm install
-Start the frontend application:
+    ```bash
+   npm install
 
-bash
-Copy code
-npm run dev
-Backend
-Navigate to the backend directory:
+3. Start the frontend application:
 
-bash
-Copy code
-cd backend
-Install the required dependencies:
+   ```bash
+  npm run dev
 
-bash
-Copy code
-npm install
-Start the backend server using Nodemon:
+#### Backend
+1. Navigate to the `backend` directory:
 
-bash
-Copy code
-nodemon server.js
+       ```bash
+   cd backend
+   
+2. Install the required dependencies:
+
+           ```bash
+      npm install
+
+3. Start the backend server using Nodemon:
+
+    ```bash
+      nodemon server
