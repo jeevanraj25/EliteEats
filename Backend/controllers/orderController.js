@@ -7,7 +7,7 @@ dotenv.config();
 
 // console.log(process.env);
 const apiKey = process.env.STRIPE_API_KEY;
-
+// console.log(apiKey);
 
 
 if (!apiKey) {
@@ -26,8 +26,10 @@ const stripe = new Stripe(apiKey);
 // placing an order for fronted
 const placeOrder = async (req,res) =>{
 
-    const fronted_url = process.env.FRONTEND_URL;
-   
+    const fronted_url = "http://localhost:5173/"
+    
+
+  
 
     try {
         const newOrder = new orderModel({
@@ -47,7 +49,7 @@ const placeOrder = async (req,res) =>{
                 product_data :{
                     name:item.name
                 },
-                unit_amount:item.price
+                unit_amount:item.price * 200
             },
             quantity:item.quantity
         }))
@@ -58,7 +60,7 @@ const placeOrder = async (req,res) =>{
                 product_data :{
                     name:"Delivary charges"
                 },
-                unit_amount:200
+                unit_amount:200 * 100
             },
             quantity:1
         })
@@ -115,6 +117,7 @@ const listOrders = async (req,res) =>{
     
     try {
         const orders =await orderModel.find({});
+        // console.log(orders);
         res.json({success:true,data:orders});
     } catch (error) {
         console.log(error);
