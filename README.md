@@ -50,14 +50,14 @@ Ensure that you have the following installed on your local machine:
 1. Navigate to the `backend` directory:
 
    ```bash
-       cd backend
+   cd backend
    
 2. Install the required dependencies:
 
    ```bash
-       npm install
+    npm install
 
 3. Start the backend server using Nodemon:
 
     ```bash
-      nodemon server
+     nodemon server
