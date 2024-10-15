@@ -49,12 +49,12 @@ Ensure that you have the following installed on your local machine:
 #### Backend
 1. Navigate to the `backend` directory:
 
-       ```bash
+   ```bash
        cd backend
    
 2. Install the required dependencies:
 
-           ```bash
+   ```bash
        npm install
 
 3. Start the backend server using Nodemon:
